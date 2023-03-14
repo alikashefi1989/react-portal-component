@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const body = document.getElementsByTagName('body')[0];
+const portalRoute = document.createElement('div');
+portalRoute.id = 'portal-root';
+portalRoute.setAttribute('style', 'z-index:2')
+body.appendChild(portalRoute);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
